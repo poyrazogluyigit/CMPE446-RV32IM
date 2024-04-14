@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="OP_AL_32I.cpp" path="E:\assignment\OP_AL_32I.cpp"/>
+    <originFiles name="OP_AL_B.cpp" path="E:\assignment\OP_AL_B.cpp"/>
+    <originFiles name="hart.cpp" path="E:\assignment\hart.cpp"/>
+    <originFiles name="parameters.hpp" path="E:\assignment\parameters.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_hart.cpp" path="E:\assignment\test_hart.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

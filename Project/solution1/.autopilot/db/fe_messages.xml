@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/assignment/assignment/solution1/csynth.tcl:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="hart" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=hart" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/assignment/assignment/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="hart" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=hart" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:5:0" msg_body="Inlining function 'OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
+        <args Callee="OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Callee-DebugLoc="File OP_AL_B.cpp Line 3 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 5 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

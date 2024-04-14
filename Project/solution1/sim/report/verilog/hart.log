@@ -1,0 +1,15 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "E:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling test_hart.cpp_pre.cpp.tb.cpp
+   Compiling OP_AL_32I.cpp_pre.cpp.tb.cpp
+   Compiling hart.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hart.cpp
+   Compiling OP_AL_B.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hart_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+ERROR: [COSIM-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***

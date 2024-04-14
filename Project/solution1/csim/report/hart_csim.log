@@ -1,0 +1,33 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_hart.cpp in debug mode
+   Compiling ../../../../OP_AL_32I.cpp in debug mode
+   Compiling ../../../../OP_AL_B.cpp in debug mode
+   Compiling ../../../../hart.cpp in debug mode
+   Generating csim.exe
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

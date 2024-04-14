@@ -1,0 +1,90 @@
+INFO: [HLS 200-10] Running 'E:/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'yigit' on host 'desktop-45qjq0p' (Windows NT_amd64 version 6.2) on Sun Apr 14 20:14:36 +0300 2024
+INFO: [HLS 200-10] In directory 'E:/assignment'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'E:/assignment/assignment/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: source E:/assignment/assignment/solution1/cosim.tcl
+INFO: [HLS 200-1510] Running: open_project assignment 
+INFO: [HLS 200-10] Opening project 'E:/assignment/assignment'.
+INFO: [HLS 200-1510] Running: set_top hart 
+INFO: [HLS 200-1510] Running: add_files OP_AL_32I.cpp 
+INFO: [HLS 200-10] Adding design file 'OP_AL_32I.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files OP_AL_B.cpp 
+INFO: [HLS 200-10] Adding design file 'OP_AL_B.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files hart.cpp 
+INFO: [HLS 200-10] Adding design file 'hart.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files parameters.hpp 
+INFO: [HLS 200-10] Adding design file 'parameters.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_hart.cpp -cflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'test_hart.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'E:/assignment/assignment/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./assignment/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "E:/Xilinx/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling test_hart.cpp_pre.cpp.tb.cpp
+   Compiling OP_AL_32I.cpp_pre.cpp.tb.cpp
+   Compiling hart.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hart.cpp
+   Compiling OP_AL_B.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hart_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+INFO: [COSIM 212-333] Generating C post check test bench ...
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 48.68 seconds; current allocated memory: 10.012 MB.
+command 'ap_source' returned error code
+    while executing
+"source E:/assignment/assignment/solution1/cosim.tcl"
+    invoked from within
+"hls::main E:/assignment/assignment/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 51.696 seconds; peak allocated memory: 221.566 MB.
