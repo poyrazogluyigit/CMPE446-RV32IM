@@ -1,5 +1,5 @@
 
-set TopModule "hart"
+set TopModule "top_module"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 1
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix hart_
+set RtlSubPrefix top_module_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -41,10 +41,10 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xc7vx550t:-ffg1927:-1
-set SourceFiles {sc {} c {../../OP_AL_32I.cpp ../../OP_AL_B.cpp ../../hart.cpp}}
-set SourceFlags {sc {} c {{} {} {}}}
-set DirectiveFile {}
+set TargetInfo xczu7ev:-ffvf1517:-3-e
+set SourceFiles {sc {} c {../../top_module.cpp ../../hazard_detector.cpp ../../hart.cpp ../../OP_AL_B.cpp ../../OP_AL_32I.cpp}}
+set SourceFlags {sc {} c {{} {} {} {} {}}}
+set DirectiveFile /home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/solution1.directive
 set TBFiles {verilog ../../test_hart.cpp bc ../../test_hart.cpp vhdl ../../test_hart.cpp sc ../../test_hart.cpp cas ../../test_hart.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -56,10 +56,10 @@ set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_ga
 set TBTVFileNotFound {}
 set AppFile ../hls.app
 set ApsFile solution1.aps
-set AvePath ../../.
+set AvePath ../..
 set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/virtex7/virtex7}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus}}}
 set HPFPO 0

@@ -18,6 +18,11 @@ using namespace std;
 #define JAL 0b1101111
 #define JALR 0b1100111
 
+#define R_0TYPE 0b01100110000000
+#define R_32TYPE 0b01100110100000
+#define I_0TYPE 0b00100110000000
+#define I_32TYPE 0b00100110100000
+
 
 #define FUNC7_0 0
 #define FUNC7_32 32

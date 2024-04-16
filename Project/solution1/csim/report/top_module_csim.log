@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_hart.cpp in debug mode
+   Compiling ../../../../OP_AL_32I.cpp in debug mode
+   Compiling ../../../../OP_AL_B.cpp in debug mode
+   Compiling ../../../../hart.cpp in debug mode
+   Compiling ../../../../hazard_detector.cpp in debug mode
+   Compiling ../../../../top_module.cpp in debug mode
+   Generating csim.exe

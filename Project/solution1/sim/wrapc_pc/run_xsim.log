@@ -1,0 +1,232 @@
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0xfff00593
+50 0x613
+54 0x0c5f463
+Illegal instruction 0x108093
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx2/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hart_top glbl -Oenable_linking_all_libraries -prj hart.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s hart -debug wave 
+Multi-threading is on. Using 14 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/hart.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_hart_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/hart_rf_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart_rf_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/hart_OP_AL_32I.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart_OP_AL_32I
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/hart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hart
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.hart_rf_V_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.hart_OP_AL_32I
+Compiling module xil_defaultlib.hart
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_hart_top
+Compiling module work.glbl
+Built simulation snapshot hart
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Mon Apr 15 15:56:40 2024...
+0 0x500093
+4 0x700113
+8 0x208463
+c 0x108093
+10 0x500193
+14 0x500213
+18 0x419463
+1c 0x108093
+20 0x500293
+24 0x700313
+28 0x62c463
+2c 0x108093
+30 0x700393
+34 0x500413
+38 0x083d463
+3c 0x108093
+40 0x493
+44 0xfff00513
+48 0x0a4e463
+4c 0x108093
+50 0xfff00593
+54 0x613
+58 0x0c5f463
+Illegal instruction 0x108093

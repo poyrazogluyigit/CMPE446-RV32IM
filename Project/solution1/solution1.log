@@ -866,3 +866,718 @@ ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation 
 ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
 ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 48.68 seconds; current allocated memory: 10.012 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./Project/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name hart hart 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.05 seconds; current allocated memory: 750.316 MB.
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.19 seconds. CPU system time: 1.97 seconds. Elapsed time: 12.18 seconds; current allocated memory: 750.910 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ4hart6ap_intILi32EES0_E2rf': Complete partitioning on dimension 1. (hart.cpp:10:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.8 seconds. CPU system time: 0.63 seconds. Elapsed time: 4.45 seconds; current allocated memory: 751.961 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 751.961 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 763.145 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 774.430 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (OP_AL_32I.cpp:87:1) in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.25 seconds; current allocated memory: 807.094 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.37 seconds. CPU system time: 0 seconds. Elapsed time: 0.38 seconds; current allocated memory: 833.793 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hart' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.16 seconds; current allocated memory: 835.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 837.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 842.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 855.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'OP_AL_32I'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 871.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/inst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hart/pc' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hart' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hart_ap_int_32_ap_int_32_rf_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ4hart6ap_intILi32EES0_E2rf_21' is power-on initialization.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 10.06 seconds; current allocated memory: 756.656 MB.
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+WARNING: [HLS 207-4675] switch condition has boolean value (top_module.cpp:23:3)
+INFO: [HLS 200-10] Analyzing design file 'hazard_detector.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.32 seconds. CPU system time: 3.06 seconds. Elapsed time: 19.42 seconds; current allocated memory: 757.113 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'hazard_detector(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_int<32>)' (top_module.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1. (top_module.cpp:6:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:13:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:13:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:26:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:28:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:38:44)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:58:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.96 seconds. CPU system time: 0.62 seconds. Elapsed time: 4.6 seconds; current allocated memory: 758.215 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 758.215 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 770.312 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 783.906 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:21:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.4 seconds; current allocated memory: 820.359 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.5 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.52 seconds; current allocated memory: 866.812 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.18 seconds; current allocated memory: 869.406 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 871.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 872.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 873.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.56 seconds. CPU system time: 0.01 seconds. Elapsed time: 4.57 seconds; current allocated memory: 901.754 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.71 seconds. CPU system time: 0 seconds. Elapsed time: 0.72 seconds; current allocated memory: 901.754 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 10.05 seconds; current allocated memory: 772.496 MB.
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+WARNING: [HLS 207-4675] switch condition has boolean value (top_module.cpp:25:3)
+INFO: [HLS 200-10] Analyzing design file 'hazard_detector.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.62 seconds. CPU system time: 3.01 seconds. Elapsed time: 19.68 seconds; current allocated memory: 772.980 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'hazard_detector(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_int<32>)' (top_module.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1. (top_module.cpp:6:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:28:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:30:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:40:44)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:60:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.31 seconds. CPU system time: 0.58 seconds. Elapsed time: 4.92 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 786.223 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.16 seconds; current allocated memory: 799.844 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:23:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.42 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.45 seconds; current allocated memory: 836.309 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.57 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.58 seconds; current allocated memory: 882.742 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.17 seconds; current allocated memory: 885.320 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 887.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 888.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 889.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.68 seconds. CPU system time: 0.02 seconds. Elapsed time: 4.71 seconds; current allocated memory: 917.445 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.76 seconds; current allocated memory: 917.445 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.02 seconds. Elapsed time: 10.06 seconds; current allocated memory: 772.496 MB.
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+WARNING: [HLS 207-4675] switch condition has boolean value (top_module.cpp:25:3)
+INFO: [HLS 200-10] Analyzing design file 'hazard_detector.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.63 seconds. CPU system time: 3.22 seconds. Elapsed time: 19.91 seconds; current allocated memory: 772.984 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'hazard_detector(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_int<32>)' (top_module.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1. (top_module.cpp:6:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:28:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:30:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:40:44)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:60:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.32 seconds. CPU system time: 0.66 seconds. Elapsed time: 5 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 786.223 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 799.863 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:23:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.4 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 836.320 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.54 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.56 seconds; current allocated memory: 882.750 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.17 seconds; current allocated memory: 885.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 887.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 888.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 889.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.58 seconds. CPU system time: 0.01 seconds. Elapsed time: 4.61 seconds; current allocated memory: 917.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.73 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.74 seconds; current allocated memory: 917.453 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.06 seconds; current allocated memory: 772.496 MB.
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+WARNING: [HLS 207-4675] switch condition has boolean value (top_module.cpp:25:3)
+INFO: [HLS 200-10] Analyzing design file 'hazard_detector.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.62 seconds. CPU system time: 3.08 seconds. Elapsed time: 19.74 seconds; current allocated memory: 772.984 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'hazard_detector(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_int<32>)' (top_module.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1. (top_module.cpp:6:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:28:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:30:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:40:44)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:60:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.42 seconds. CPU system time: 0.63 seconds. Elapsed time: 5.06 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 774.117 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 786.223 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 799.809 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:23:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.47 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.51 seconds; current allocated memory: 836.273 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.67 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.69 seconds; current allocated memory: 882.754 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.17 seconds; current allocated memory: 885.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 887.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 888.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 889.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.61 seconds. CPU system time: 0.02 seconds. Elapsed time: 4.64 seconds; current allocated memory: 917.648 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.75 seconds; current allocated memory: 917.648 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.02 seconds. Elapsed time: 10.06 seconds; current allocated memory: 756.656 MB.
+INFO: [HLS 200-10] Analyzing design file 'top_module.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hazard_detector.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'hart.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_B.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'OP_AL_32I.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 16.7 seconds. CPU system time: 3.22 seconds. Elapsed time: 20.02 seconds; current allocated memory: 757.145 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)' into 'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)' (hart.cpp:5:0)
+INFO: [HLS 214-178] Inlining function 'hazard_detector(ap_int<32>, ap_int<32>)' into 'top_module(ap_int<32>, ap_int<32>, ap_int<32>)' (top_module.cpp:4:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1. (top_module.cpp:6:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:45)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:70)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:27:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:29:43)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:39:44)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:55:42)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.32 seconds. CPU system time: 0.65 seconds. Elapsed time: 4.98 seconds; current allocated memory: 758.230 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 758.230 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 770.316 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 783.938 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (top_module.cpp:23:6) in function 'top_module'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'OP_AL_32I'... converting 42 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.42 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 820.402 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.52 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.55 seconds; current allocated memory: 866.852 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top_module' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'OP_AL_32I' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.17 seconds; current allocated memory: 869.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 872.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hart' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 872.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 873.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top_module' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4.63 seconds. CPU system time: 0.02 seconds. Elapsed time: 4.67 seconds; current allocated memory: 901.930 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.75 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.76 seconds; current allocated memory: 901.930 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================

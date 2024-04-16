@@ -1,6 +1,6 @@
 #include "parameters.hpp"
 
-jump_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2){
+hart_return_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2){
 
 	pc_type mdf = 4;
 	ctl_type status = 0;
@@ -16,5 +16,5 @@ jump_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2){
 			mdf = 0;
 			break;
 	}
-	return {mdf, status};
+	return {0, (uns) mdf, status};
 }

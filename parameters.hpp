@@ -18,6 +18,11 @@ using namespace std;
 #define JAL 0b1101111
 #define JALR 0b1100111
 
+#define R_0TYPE 0b01100110000000
+#define R_32TYPE 0b01100110100000
+#define I_0TYPE 0b00100110000000
+#define I_32TYPE 0b00100110100000
+
 
 #define FUNC7_0 0
 #define FUNC7_32 32
@@ -35,10 +40,12 @@ typedef ap_int<XLEN> sgn;
 typedef ap_uint<CTL_WIDTH> ctl_type ;
 typedef ap_int<12> imm_12_type;
 typedef ap_int<20> imm_20_type;
+typedef ap_uint<2> hazard_type;
 
 
 
 typedef struct {
+	ap_uint<32> result;
 	pc_type next_pc;
 	ctl_type valid;
 } hart_return_type;
@@ -52,6 +59,13 @@ typedef struct {
 	pc_type value;
 	ctl_type valid;
 } jump_type;
+
+typedef struct {
+	pc_type next_pc;
+	ctl_type first_valid;
+	ctl_type second_valid;
+	ctl_type data_hazard;
+} superscalar_type;
 
 
 
@@ -82,6 +96,9 @@ typedef struct {
 #define BLTU 6
 #define BGEU 7s
 
-hart_return_type hart(inst_type inst, pc_type pc);
-arith_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
-jump_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2);
+
+superscalar_type top_module(pc_type pc, inst_type inst1, inst_type inst2);
+hart_return_type hart(inst_type inst, pc_type pc, r_type op1, r_type op2);
+hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
+hart_return_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2);
+hazard_type hazard_detector(inst_type inst1, inst_type inst2);

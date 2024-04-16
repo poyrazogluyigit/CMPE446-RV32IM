@@ -1,14 +1,14 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
-# Tool Version Limit: 2023.10
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+# Tool Version Limit: 2019.12
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-# 
 # ==============================================================
-set ::env(PATH) "$::env(PATH);E:/Xilinx/Vitis_HLS/2023.2/win64/tools/fpo_v7_1"
-set ::env(PATH) "$::env(PATH);E:/Xilinx/Vitis_HLS/2023.2/win64/tools/fft_v9_1"
-set ::env(PATH) "$::env(PATH);E:/Xilinx/Vitis_HLS/2023.2/win64/tools/fir_v7_0"
-set ::env(PATH) "$::env(PATH);E:/Xilinx/Vitis_HLS/2023.2/win64/tools/dds_v6_0"
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fpo_v7_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
+set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
+set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
 
 proc cpvcdfromsctortl {} {
 	#copy *.vcd from sc to verilog/vhdl dir

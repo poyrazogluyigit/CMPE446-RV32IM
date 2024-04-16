@@ -11,8 +11,9 @@
         <config_export format="ip_catalog" rtl="verilog" vivado_clock="10"/>
     </config>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
-            <Platform>xilinx/virtex7/virtex7</Platform>
+        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
+            <Platform>xilinx/zynquplus/zynquplus</Platform>
+            <Platform>xilinx/zynquplus/zynquplus_fpv7</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -49,8 +50,8 @@
         <Format formatName="pcore" use_netlist="none"/>
         <Format formatName="xo"/>
     </ExportDesign>
-    <Simulation argv="">
-        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="xsim" waveDebug="true" ldflags="" mflags="" compiledLibrary="">
+    <Simulation>
+        <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="all" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="true">
             <Rtl active="false" name="systemc"/>
             <Rtl active="true" name="verilog"/>
             <Rtl active="false" name="vhdl"/>
@@ -60,17 +61,17 @@
         <value string="solution1"/>
     </name>
     <project>
-        <value string="assignment"/>
+        <value string="Project"/>
     </project>
     <flowTarget value="vivado"/>
     <targetInfo>
-        <TargetInfo value="xc7vx550t:-ffg1927:-1"/>
+        <TargetInfo value="xczu7ev:-ffvf1517:-3-e"/>
     </targetInfo>
     <libraryList>
-        <library value="xilinx/virtex7/virtex7" name="DefaultPlatform"/>
+        <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" default="false" period="10"/>
+        <clock default="false" name="default" period="10"/>
     </clockList>
 </solution>
 

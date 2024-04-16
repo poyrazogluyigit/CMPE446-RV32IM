@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="OP_AL_32I.cpp" path="E:\assignment\OP_AL_32I.cpp"/>
-    <originFiles name="OP_AL_B.cpp" path="E:\assignment\OP_AL_B.cpp"/>
-    <originFiles name="hart.cpp" path="E:\assignment\hart.cpp"/>
-    <originFiles name="parameters.hpp" path="E:\assignment\parameters.hpp"/>
+    <originFiles name="top_module.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/top_module.cpp"/>
+    <originFiles name="parameters.hpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/parameters.hpp"/>
+    <originFiles name="hazard_detector.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/hazard_detector.cpp"/>
+    <originFiles name="hart.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/hart.cpp"/>
+    <originFiles name="OP_AL_B.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/OP_AL_B.cpp"/>
+    <originFiles name="OP_AL_32I.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/OP_AL_32I.cpp"/>
   </source>
   <testbench>
-    <originFiles name="test_hart.cpp" path="E:\assignment\test_hart.cpp"/>
+    <originFiles name="test_hart.cpp" path="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/test_hart.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -2,7 +2,7 @@
 
 
 // this function is for R-type instructions
-arith_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2){
+hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2){
 
 	r_type rd_val = 0;
 	ctl_type status = 0;
@@ -61,10 +61,17 @@ arith_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_t
 				break;
 				// for right shifts, classify by func7
 				case SRL:
-				if (func7 == 0)  rd_val = (uns) op1 >> immediate;
-				else if (func7 == 32) rd_val = op1 < 0 ? ~(~op1 >> shamt) : op1 >> shamt;
+					switch(func7){
+					case 0:
+						rd_val = (uns) op1 >> immediate;
+						break;
+					case 32:
+						rd_val = op1 < 0 ? ~(~op1 >> shamt) : op1 >> shamt;
+						break;
+					default:
+						status = 1;
+					}
 				// illegal func7 for right
-				else status = 1;
 				break;
 				default: //illegal func3
 					status = 1;
@@ -76,5 +83,5 @@ arith_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_t
 	default: status = 1; break;
 	}
 
-	return {rd_val, status};
+	return {rd_val, 4, status};
 }
