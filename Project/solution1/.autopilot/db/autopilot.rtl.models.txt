@@ -1,4 +1,4 @@
-top_module_mux_325_32_1_1
+top_module_sparsemux_65_5_32_1_1
 OP_AL_32I
 hart
 top_module

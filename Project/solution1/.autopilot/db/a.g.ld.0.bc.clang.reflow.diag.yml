@@ -1,0 +1,94 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: hart.cpp, Line: 5, Column: 0 }
+Function:        _Z4hart6ap_intILi32EES0_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'OP_AL_32B(ap_int<32>, ap_uint<3>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: OP_AL_B.cpp, Line: 3, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hart(ap_int<32>, ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: hart.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: top_module.cpp, Line: 5, Column: 0 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hazard_detector(ap_int<32>, ap_int<32>, ap_int<32>, ap_uint<1>, ap_uint<1>, ap_uint<1>)'
+    DebugLoc:        { File: hazard_detector.cpp, Line: 5, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_module(ap_int<32>, ap_int<32>, ap_int<32>)'
+    DebugLoc:        { File: top_module.cpp, Line: 5, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: top_module.cpp, Line: 7, Column: 0 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10top_module6ap_intILi32EES0_S0_E2rf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 14, Column: 45 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 14, Column: 70 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 16, Column: 45 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 16, Column: 70 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 25, Column: 25 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: top_module.cpp, Line: 26, Column: 25 }
+Function:        _Z10top_module6ap_intILi32EES0_S0_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...

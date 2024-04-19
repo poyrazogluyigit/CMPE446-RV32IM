@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/./sim/autowrap/testbench/hart.cpp_pre.cpp.tb.cpp

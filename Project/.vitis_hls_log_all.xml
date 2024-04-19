@@ -6,56 +6,12 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Project" solutionName="solution1" date="2024-04-16T19:42:49.785+0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Project" solutionName="solution1" date="2024-04-16T19:41:35.138+0300"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Project" solutionName="solution1" date="2024-04-16T19:40:24.712+0300"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_31' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:02.428+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_30' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.958+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_29' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.956+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_28' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.953+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_27' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.950+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_26' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.948+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_25' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.946+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_24' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.944+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_23' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.942+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_22' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.940+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_21' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.938+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_20' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.937+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_19' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.934+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_18' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.933+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_17' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.931+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_16' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.929+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_15' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.927+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_14' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.925+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_13' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.924+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_12' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.922+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_11' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.920+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZ10top_module6ap_intILi32EES0_S0_E2rf_10' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.918+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_9' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.917+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_8' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.915+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_7' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.913+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_6' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.912+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_5' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.910+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_4' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.907+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_3' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.904+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_2' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.899+0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'top_module_ap_int_32_ap_int_32_ap_int_32_rf_1' is power-on initialization." projectName="Project" solutionName="solution1" date="2024-04-16T19:24:00.893+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:55:42)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.764+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:39:44)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.763+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:29:43)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.761+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:27:43)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.760+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:70)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.758+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:14:45)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.755+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:70)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.751+0300" type="Warning"/>
-        <logs message="WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (top_module.cpp:12:45)" projectName="Project" solutionName="solution1" date="2024-04-16T19:23:52.745+0300" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>

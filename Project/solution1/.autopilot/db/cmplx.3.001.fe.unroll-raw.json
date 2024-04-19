@@ -1,0 +1,79 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "4 4 3",
+    "file": "top_module.cpp",
+    "fileloc": 5,
+    "instructions": 137,
+    "loads": {
+      "G": 5,
+      "L": 16
+    },
+    "name": "top_module",
+    "stores": {
+      "G": 4,
+      "L": 14
+    },
+    "total_instructions": 1261
+  },
+  "1": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "OP_AL_B.cpp",
+    "fileloc": 3,
+    "instructions": 76,
+    "loads": {
+      "L": 19
+    },
+    "name": "OP_AL_32B",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 76
+  },
+  "2": {
+    "basicblocks": 89,
+    "calls": "",
+    "file": "OP_AL_32I.cpp",
+    "fileloc": 5,
+    "instructions": 256,
+    "loads": {
+      "L": 52
+    },
+    "name": "OP_AL_32I",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 256
+  },
+  "3": {
+    "basicblocks": 42,
+    "calls": "",
+    "file": "hazard_detector.cpp",
+    "fileloc": 5,
+    "instructions": 118,
+    "loads": {
+      "L": 17
+    },
+    "name": "hazard_detector",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 118
+  },
+  "4": {
+    "basicblocks": 8,
+    "calls": "1 2",
+    "file": "hart.cpp",
+    "fileloc": 4,
+    "instructions": 171,
+    "loads": {
+      "L": 29
+    },
+    "name": "hart",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 503
+  }
+}

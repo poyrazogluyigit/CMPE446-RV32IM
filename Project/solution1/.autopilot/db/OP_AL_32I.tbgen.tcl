@@ -10,41 +10,45 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
 set C_modelName {OP_AL_32I}
 set C_modelType { int 33 }
 set C_modelArgList {
-	{ opcode int 7 regular  }
-	{ func7 int 7 regular  }
-	{ func3 int 3 regular  }
-	{ op1 int 32 regular  }
-	{ op2 int 32 regular  }
+	{ inst_val int 32 regular  }
+	{ func7_val int 7 regular  }
+	{ func3_val int 3 regular  }
+	{ op1_val int 32 regular  }
+	{ op2_val int 32 regular  }
 }
+set hasAXIMCache 0
+set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "opcode", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
- 	{ "Name" : "func7", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
- 	{ "Name" : "func3", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
- 	{ "Name" : "op1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "op2", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+	{ "Name" : "inst_val", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "func7_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "func3_val", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
+ 	{ "Name" : "op1_val", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "op2_val", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 33} ]}
 # RTL Port declarations: 
 set portNum 8
 set portList { 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ opcode sc_in sc_lv 7 signal 0 } 
-	{ func7 sc_in sc_lv 7 signal 1 } 
-	{ func3 sc_in sc_lv 3 signal 2 } 
-	{ op1 sc_in sc_lv 32 signal 3 } 
-	{ op2 sc_in sc_lv 32 signal 4 } 
+	{ inst_val sc_in sc_lv 32 signal 0 } 
+	{ func7_val sc_in sc_lv 7 signal 1 } 
+	{ func3_val sc_in sc_lv 3 signal 2 } 
+	{ op1_val sc_in sc_lv 32 signal 3 } 
+	{ op2_val sc_in sc_lv 32 signal 4 } 
 	{ ap_return_0 sc_out sc_lv 32 signal -1 } 
 	{ ap_return_1 sc_out sc_lv 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "opcode", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "opcode", "role": "default" }} , 
- 	{ "name": "func7", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "func7", "role": "default" }} , 
- 	{ "name": "func3", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "func3", "role": "default" }} , 
- 	{ "name": "op1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "op1", "role": "default" }} , 
- 	{ "name": "op2", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "op2", "role": "default" }} , 
+ 	{ "name": "inst_val", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "inst_val", "role": "default" }} , 
+ 	{ "name": "func7_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "func7_val", "role": "default" }} , 
+ 	{ "name": "func3_val", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "func3_val", "role": "default" }} , 
+ 	{ "name": "op1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "op1_val", "role": "default" }} , 
+ 	{ "name": "op2_val", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "op2_val", "role": "default" }} , 
  	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 
  	{ "name": "ap_return_1", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "ap_return_1", "role": "default" }}  ]}
 
@@ -64,20 +68,20 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "opcode", "Type" : "None", "Direction" : "I"},
-			{"Name" : "func7", "Type" : "None", "Direction" : "I"},
-			{"Name" : "func3", "Type" : "None", "Direction" : "I"},
-			{"Name" : "op1", "Type" : "None", "Direction" : "I"},
-			{"Name" : "op2", "Type" : "None", "Direction" : "I"}]}]}
+			{"Name" : "inst_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "func7_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "func3_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "op1_val", "Type" : "None", "Direction" : "I"},
+			{"Name" : "op2_val", "Type" : "None", "Direction" : "I"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	OP_AL_32I {
-		opcode {Type I LastRead 0 FirstWrite -1}
-		func7 {Type I LastRead 0 FirstWrite -1}
-		func3 {Type I LastRead 0 FirstWrite -1}
-		op1 {Type I LastRead 0 FirstWrite -1}
-		op2 {Type I LastRead 0 FirstWrite -1}}}
+		inst_val {Type I LastRead 0 FirstWrite -1}
+		func7_val {Type I LastRead 0 FirstWrite -1}
+		func3_val {Type I LastRead 0 FirstWrite -1}
+		op1_val {Type I LastRead 0 FirstWrite -1}
+		op2_val {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -90,9 +94,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	opcode { ap_none {  { opcode in_data 0 7 } } }
-	func7 { ap_none {  { func7 in_data 0 7 } } }
-	func3 { ap_none {  { func3 in_data 0 3 } } }
-	op1 { ap_none {  { op1 in_data 0 32 } } }
-	op2 { ap_none {  { op2 in_data 0 32 } } }
+	inst_val { ap_none {  { inst_val in_data 0 32 } } }
+	func7_val { ap_none {  { func7_val in_data 0 7 } } }
+	func3_val { ap_none {  { func3_val in_data 0 3 } } }
+	op1_val { ap_none {  { op1_val in_data 0 32 } } }
+	op2_val { ap_none {  { op2_val in_data 0 32 } } }
 }

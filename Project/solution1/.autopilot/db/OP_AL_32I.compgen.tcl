@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 1 \
-    name opcode \
+    name inst_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_opcode \
+    corename dc_inst_val \
     op interface \
-    ports { opcode { I 7 vector } } \
+    ports { inst_val { I 32 vector } } \
 } "
 }
 
@@ -26,14 +26,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 2 \
-    name func7 \
+    name func7_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_func7 \
+    corename dc_func7_val \
     op interface \
-    ports { func7 { I 7 vector } } \
+    ports { func7_val { I 7 vector } } \
 } "
 }
 
@@ -41,14 +41,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 3 \
-    name func3 \
+    name func3_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_func3 \
+    corename dc_func3_val \
     op interface \
-    ports { func3 { I 3 vector } } \
+    ports { func3_val { I 3 vector } } \
 } "
 }
 
@@ -56,14 +56,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 4 \
-    name op1 \
+    name op1_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_op1 \
+    corename dc_op1_val \
     op interface \
-    ports { op1 { I 32 vector } } \
+    ports { op1_val { I 32 vector } } \
 } "
 }
 
@@ -71,14 +71,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
-    name op2 \
+    name op2_val \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_op2 \
+    corename dc_op2_val \
     op interface \
-    ports { op2 { I 32 vector } } \
+    ports { op2_val { I 32 vector } } \
 } "
 }
 

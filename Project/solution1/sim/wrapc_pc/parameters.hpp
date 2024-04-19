@@ -44,6 +44,7 @@ typedef ap_int<20> imm_20_type;
 
 
 typedef struct {
+	ap_uint<32> result;
 	pc_type next_pc;
 	ctl_type valid;
 } hart_return_type;
@@ -57,6 +58,21 @@ typedef struct {
 	pc_type value;
 	ctl_type valid;
 } jump_type;
+
+typedef struct {
+	pc_type next_pc;
+	ctl_type first_valid;
+	ctl_type second_valid;
+	ctl_type data_hazard;
+} superscalar_type;
+
+typedef struct {
+	ctl_type write1;
+	ctl_type write2;
+	ctl_type pc1;
+	ctl_type pc2;
+	ctl_type set_cycle;
+} hazard_type;
 
 
 
@@ -85,8 +101,11 @@ typedef struct {
 #define BLT 4
 #define BGE 5
 #define BLTU 6
-#define BGEU 7s
+#define BGEU 7
 
-hart_return_type hart(inst_type inst, pc_type pc);
-arith_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2);
-jump_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2);
+
+superscalar_type top_module(pc_type pc, inst_type inst1, inst_type inst2);
+hart_return_type hart(inst_type inst, pc_type pc, r_type op1, r_type op2);
+hart_return_type OP_AL_32I(inst_type inst1, func7_type func7, func3_type func3, r_type op1, r_type op2);
+hart_return_type OP_AL_32B(imm_type imm, func3_type func3, r_type op1, r_type op2);
+hazard_type hazard_detector(inst_type inst1, inst_type inst2, pc_type next_pc1, ctl_type valid1, ctl_type valid2, ctl_type d_haz);

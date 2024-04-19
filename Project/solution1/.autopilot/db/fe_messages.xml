@@ -1,77 +1,39 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="" msg_id="207-4947" msg_severity="WARNING" msg_loc="hazard_detector.cpp:43:85" msg_body="'&amp;&amp;' within '||'">
+        <args ClangWarningOption="logical-op-parentheses"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="" msg_id="207-4428" msg_severity="INFO" msg_loc="hazard_detector.cpp:43:85" msg_body="place parentheses around the '&amp;&amp;' expression to silence this warning">
+        <args/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/csynth.tcl:21:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/csynth.tcl:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_module" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:7:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=rf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_module" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:13:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="dim=1 type=complete variable=rf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:15:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="top_module.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="top_module" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="hart.cpp:5:0" msg_body="Inlining function 'OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
-        <args Callee="OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)"/>
+        <args Callee="OP_AL_32B(ap_int&lt;32&gt;, ap_uint&lt;3&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Callee-DebugLoc="File OP_AL_B.cpp Line 3 Column 0" Caller="hart(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File hart.cpp Line 5 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top_module.cpp:4:0" msg_body="Inlining function 'hazard_detector(ap_int&lt;32&gt;, ap_int&lt;32&gt;)' into 'top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
-        <args Callee="hazard_detector(ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller="top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top_module.cpp:5:0" msg_body="Inlining function 'hazard_detector(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;)' into 'top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)'">
+        <args Callee="hazard_detector(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;, ap_uint&lt;1&gt;)" Callee-DebugLoc="File hazard_detector.cpp Line 5 Column 0" Caller="top_module(ap_int&lt;32&gt;, ap_int&lt;32&gt;, ap_int&lt;32&gt;)" Caller-DebugLoc="File top_module.cpp Line 5 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top_module.cpp:6:0" msg_body="Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="top_module.cpp:7:0" msg_body="Applying array_partition to '_ZZ10top_module6ap_intILi32EES0_S0_E2rf': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="_ZZ10top_module6ap_intILi32EES0_S0_E2rf"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:12:45" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:12:70" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:14:45" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:14:70" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:27:43" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:29:43" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:39:44" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:55:42" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:16:45" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:16:70" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:25:25" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="top_module.cpp:26:25" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
 </xilinx:hls_fe_msgs>
 

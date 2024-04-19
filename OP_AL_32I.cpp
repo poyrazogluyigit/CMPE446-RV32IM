@@ -2,14 +2,15 @@
 
 
 // this function is for R-type instructions
-hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func3, r_type op1, r_type op2){
+hart_return_type OP_AL_32I(inst_type inst, func7_type func7, func3_type func3, r_type op1, r_type op2){
 
 	r_type rd_val = 0;
-	ctl_type status = 0;
+	ctl_type valid = 1;
 
+	opcode_type opcode = inst.range(6, 0);
 
 	// calculate immediate values
-	imm_type immediate = (func7, op2);
+	imm_type immediate = inst.range(31, 20);
 	ap_uint<6> shamt = immediate & 0b111111;
 
 
@@ -27,7 +28,7 @@ hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func
 					case OR:  rd_val = op1 | op2;break;
 					case AND: rd_val = op1 & op2;break;
 					default: //illegal func3
-						status = 1;
+						valid = 0;
 						break;
 					}
 					break;
@@ -36,12 +37,12 @@ hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func
 					case SUB: rd_val = op1 - op2; break;
 					case SRA: rd_val = op1 < 0 ? ~(~op1 >> op2) : op1 >> op2 ;break;
 					default: // illegal func3
-						status = 1;
+						valid = 0;
 						break;
 					}
 					break;
 				default: //illegal func7
-					status = 1;
+					valid = 0;
 					break;
 				}
 	}
@@ -57,7 +58,7 @@ hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func
 				case SLLI:
 				if (func7 == 0) rd_val = op1 << shamt;
 				// illegal func7
-				else status = 1;
+				else valid = 0;
 				break;
 				// for right shifts, classify by func7
 				case SRL:
@@ -69,19 +70,19 @@ hart_return_type OP_AL_32I(opcode_type opcode, func7_type func7, func3_type func
 						rd_val = op1 < 0 ? ~(~op1 >> shamt) : op1 >> shamt;
 						break;
 					default:
-						status = 1;
+						valid = 0;
 					}
 				// illegal func7 for right
 				break;
 				default: //illegal func3
-					status = 1;
+					valid = 0;
 					break;
 				}
 	}
 	break;
 	// illegal opcode
-	default: status = 1; break;
+	default: valid = 0; break;
 	}
 
-	return {rd_val, 4, status};
+	return {rd_val, 4, valid};
 }

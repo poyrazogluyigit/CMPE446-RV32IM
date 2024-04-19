@@ -1,0 +1,8 @@
+sv work "glbl.v"
+sv xil_defaultlib "top_module.autotb.v"
+sv xil_defaultlib "top_module.v"
+sv xil_defaultlib "top_module_hart.v"
+sv xil_defaultlib "top_module_OP_AL_32I.v"
+sv xil_defaultlib "top_module_sparsemux_65_5_32_1_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

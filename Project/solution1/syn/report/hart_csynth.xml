@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2022.2</Version>
+<Version>2023.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -18,7 +18,7 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.307</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.010</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -31,12 +31,17 @@
 <Interval-min>0</Interval-min>
 <Interval-max>0</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>hart.cpp:17</SourceLocation>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <FF>0</FF>
-<LUT>2076</LUT>
+<LUT>2314</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -96,8 +101,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>inst</name>
-<Object>inst</Object>
+<name>inst_val</name>
+<Object>inst_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -107,8 +112,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>pc</name>
-<Object>pc</Object>
+<name>pc_val</name>
+<Object>pc_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -118,8 +123,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>op1</name>
-<Object>op1</Object>
+<name>op1_val</name>
+<Object>op1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -129,8 +134,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>op2</name>
-<Object>op2</Object>
+<name>op2_val</name>
+<Object>op2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

@@ -1,14 +1,14 @@
 # ==============================================================
-# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
-# Tool Version Limit: 2019.12
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+# Tool Version Limit: 2023.10
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+# 
 # ==============================================================
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fpo_v7_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fft_v9_1:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/fir_v7_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lnx64/tools/dds_v6_0:$::env(LD_LIBRARY_PATH)
-set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/usr/lib/x86_64-linux-gnu
-set ::env(LD_LIBRARY_PATH) /tools/Xilinx2/Vitis_HLS/2022.2/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
+set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2023.2/win64/tools/fpo_v7_1"
+set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2023.2/win64/tools/fft_v9_1"
+set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2023.2/win64/tools/fir_v7_0"
+set ::env(PATH) "$::env(PATH);D:/Xilinx/Vitis_HLS/2023.2/win64/tools/dds_v6_0"
 
 proc cpvcdfromsctortl {} {
 	#copy *.vcd from sc to verilog/vhdl dir
@@ -143,10 +143,10 @@ proc sim {} {
 	set dirAutoSimVlogGate   "$dirAutoSimRoot/verilog.gate"
 	set dirAutoSimWrapc      "$dirAutoSimRoot/wrapc"
 	set gWorkingDir          "../.."
-	set constFileTvIn        "hart.autotvin.dat"
-	set constFileTvOut       "hart.autotvout.dat"
-	set constFileHdlTvIn     "hart.autohdltvin.dat"
-	set constFileHdlTvOut    "hart.autohdltvout.dat"
+	set constFileTvIn        "top_module.autotvin.dat"
+	set constFileTvOut       "top_module.autotvout.dat"
+	set constFileHdlTvIn     "top_module.autohdltvin.dat"
+	set constFileHdlTvOut    "top_module.autohdltvout.dat"
 	set gGateLevelSim        "0"
 	set gAutowrap            "1"
 	set gTool                "modelsim"

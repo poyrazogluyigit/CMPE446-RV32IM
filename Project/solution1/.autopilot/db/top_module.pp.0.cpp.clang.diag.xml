@@ -1,19 +1,19 @@
 <dict>
   <key>main-file</key>
-  <string>/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/.autopilot/db/top_module.pp.0.cpp</string>
+  <string>D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/.autopilot/db/top_module.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h</string>
+      <string>D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/csynth.tcl</string>
       <key>line</key>
-      <integer>678</integer>
+      <integer>22</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=and_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=top_module_XLX_SEP_ PragmaOptions=name=top_module_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -23,41 +23,9 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h</string>
+      <string>D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/directives.tcl</string>
       <key>line</key>
-      <integer>692</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=or_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>/tools/Xilinx2/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h</string>
-      <key>line</key>
-      <integer>706</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>/home/omer.erzurumluoglu/Desktop/CMPE446-RV32IM/Project/solution1/csynth.tcl</string>
-      <key>line</key>
-      <integer>21</integer>
+      <integer>7</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -73,7 +41,7 @@
       <key>filename</key>
       <string>top_module.cpp</string>
       <key>line</key>
-      <integer>7</integer>
+      <integer>8</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -89,7 +57,7 @@
       <key>filename</key>
       <string>top_module.cpp</string>
       <key>line</key>
-      <integer>13</integer>
+      <integer>15</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -105,7 +73,7 @@
       <key>filename</key>
       <string>top_module.cpp</string>
       <key>line</key>
-      <integer>15</integer>
+      <integer>17</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

@@ -1,80 +1,44 @@
-{"sourceFile": [{
-      "name": "",
-      "directive": [
+[
+  {
+    "functionLabel": "",
+    "functionName": "top_module",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
         {
-          "functionName": "top_module",
-          "label": "",
-          "functionLabel": "",
-          "id": "1",
-          "sourceFile": "\/home\/omer.erzurumluoglu\/Desktop\/CMPE446-RV32IM\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "top_module"
-              }]
-          }
-        },
-        {
-          "functionName": "top_module",
-          "label": "",
-          "functionLabel": "",
-          "id": "2",
-          "sourceFile": "\/home\/omer.erzurumluoglu\/Desktop\/CMPE446-RV32IM\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "top_module"
-              }]
-          }
-        },
-        {
-          "functionName": "top_module",
-          "label": "",
-          "functionLabel": "",
-          "id": "3",
-          "sourceFile": "\/home\/omer.erzurumluoglu\/Desktop\/CMPE446-RV32IM\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "top_module"
-              }]
-          }
-        },
-        {
-          "functionName": "top_module",
-          "label": "",
-          "functionLabel": "",
-          "id": "4",
-          "sourceFile": "\/home\/omer.erzurumluoglu\/Desktop\/CMPE446-RV32IM\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "top_module"
-              }]
-          }
-        },
-        {
-          "functionName": "top_module",
-          "label": "",
-          "functionLabel": "",
-          "id": "5",
-          "sourceFile": "\/home\/omer.erzurumluoglu\/Desktop\/CMPE446-RV32IM\/Project\/solution1\/csynth.tcl",
-          "sourceLine": "21",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "top_module"
-              }]
-          }
+          "name": "name",
+          "value": "top_module"
         }
       ]
-    }]}
+    },
+    "slx": false,
+    "sourceFile": "D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "top_module",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "top_module"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/CMPE446-RV32IM/CMPE446-RV32IM/Project/solution1/csynth.tcl",
+    "sourceLine": 22,
+    "success": true
+  }
+]
